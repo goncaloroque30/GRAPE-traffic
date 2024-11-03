@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "GRAPE_traffic"
+version = "0.1.0"
+description = "A library to esimate noise and local air quality emissions from trajectory data near airports."
+authors = ["Goncalo Soares Roque <goncaloroque30@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+packages = [{ include = "GRAPE_traffic", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.1.2"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+xlsxwriter = "^3.2.0"
+pitot = "^0.3.1"
+scipy = "^1.14.1"
+traffic = { git = "https://github.com/goncaloroque30/traffic.git", branch="env_impacts" }
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+ruff = "^0.7.1"
+jupyter = "^1.1.1"
+ipyleaflet = "^0.19.2"
+pre-commit = "^4.0.1"
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+extend-select = ["I", "Q", "W"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

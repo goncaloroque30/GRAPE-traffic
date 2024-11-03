@@ -1,0 +1,51 @@
+{
+    "autoDocstring.docstringFormat": "google-notypes",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": false,
+        "editor.wordBasedSuggestions": "off",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "cSpell.words": [
+        "acft",
+        "astype",
+        "Aviadvigatel",
+        "bffm",
+        "bfill",
+        "callsign",
+        "cumcount",
+        "cumdist",
+        "cummax",
+        "cumul",
+        "dropna",
+        "EDDK",
+        "eedb",
+        "ffill",
+        "fillna",
+        "firstseen",
+        "geoaltitude",
+        "getbuffer",
+        "iloc",
+        "ipynb",
+        "isin",
+        "isna",
+        "iterrows",
+        "lastseen",
+        "linregress",
+        "Lycoming",
+        "METAR",
+        "metars",
+        "nvpm",
+        "onground",
+        "Opensky",
+        "pitot",
+        "quickstart",
+        "timelike",
+        "usecols"
+    ]
+}
